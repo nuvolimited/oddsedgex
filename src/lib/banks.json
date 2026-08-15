@@ -1,0 +1,31 @@
+[
+  { "name": "Access Bank Cameroon PLC", "code": "ACCESS" },
+  { "name": "AFG Bank Cameroun", "code": "AFGBANK" },
+  { "name": "Africa Golden Bank (AGB)", "code": "AGB" },
+  { "name": "Afriland First Bank", "code": "AFRILAND" },
+  { "name": "BANGE Bank Cameroun", "code": "BANGE" },
+  { "name": "Banque Atlantique Cameroun", "code": "ATLANTA" },
+  {
+    "name": "Banque Camerounaise des Petites et Moyennes Entreprises (BC-PME)",
+    "code": "BCPME"
+  },
+  { "name": "BGFIBank Cameroun", "code": "BGFI" },
+  {
+    "name": "Banque Internationale du Cameroun pour l'Épargne et le Crédit (BICEC)",
+    "code": "BICEC"
+  },
+  { "name": "Citibank Cameroun", "code": "CITI" },
+  { "name": "Commercial Bank Cameroon (CBC)", "code": "CBC" },
+  { "name": "Crédit Communautaire d'Afrique Bank (CCA-BANK)", "code": "CCA" },
+  { "name": "Ecobank Cameroun", "code": "ECOBANK" },
+  { "name": "La Régionale Bank", "code": "REGIONALE" },
+  { "name": "National Financial Credit Bank (NFC-B)", "code": "NFC" },
+  {
+    "name": "Société Commerciale de Banque Cameroun (SCB-Cameroun)",
+    "code": "SCB"
+  },
+  { "name": "Société Générale Cameroun", "code": "SG" },
+  { "name": "Standard Chartered Bank Cameroon", "code": "SCBC" },
+  { "name": "Union Bank of Cameroon (UBC)", "code": "UBC" },
+  { "name": "United Bank for Africa (UBA)", "code": "UBA" }
+]
