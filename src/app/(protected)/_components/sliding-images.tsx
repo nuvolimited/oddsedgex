@@ -31,12 +31,12 @@ function SlidingImages() {
       className="w-full my-6"
     >
       <CarouselContent>
-        {Array.from({ length: 19 }).map((_, index) => (
+        {Array.from({ length: 15 }).map((_, index) => (
           <CarouselItem
             key={`slider-image-${index + 1}`}
             className="basis-4/5 md:basis-3/5"
           >
-            <div className="relative h-56">
+            <div className="relative h-64">
               <Image
                 src={`/slider/img${index + 1}.jpeg`}
                 alt={`Image ${index + 1}`}
