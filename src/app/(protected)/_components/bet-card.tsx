@@ -153,7 +153,7 @@ export default function BetCard({ bet }: Readonly<BetCardProps>) {
           <div class="bet-slip">
             <div class="header">
               <div class="logo">
-                <img src="/arb_sport_logo.png" alt="OddsEdgeX logo" />
+                <img src="/logo.png" alt="OddsEdgeX logo" />
               </div>
 
               <div class="bet-details">
@@ -161,7 +161,7 @@ export default function BetCard({ bet }: Readonly<BetCardProps>) {
                   bet.id.split("-")[0]
                 }</span></section>
                 <section>STAKE DATE: <span>${bet.createdAt.toLocaleString(
-                  "en-NG",
+                  "fr-CM",
                   {
                     day: "2-digit",
                     month: "short",
@@ -187,7 +187,7 @@ export default function BetCard({ bet }: Readonly<BetCardProps>) {
               </div>
               <div class="flex bt">
                 <section class="p-4 br" style="width: 25%; font-weight: 600;">Date</section>
-                <section class="p-4">${bet.game.start.toLocaleString("en-NG", {
+                <section class="p-4">${bet.game.start.toLocaleString("fr-CM", {
                   year: "numeric",
                   month: "2-digit",
                   day: "2-digit",

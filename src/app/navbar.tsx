@@ -30,7 +30,7 @@ function Navbar() {
         <Link href="/" className="flex gap-2">
           <div className="h-12 w-32 relative border-secondary-foreground/50">
             <Image
-              src={"/arb_sport_logo.png"}
+              src={"/logo.png"}
               fill
               alt="OddsEdgeX logo"
               className="object-contain"

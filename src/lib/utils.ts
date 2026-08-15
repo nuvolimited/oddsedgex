@@ -29,13 +29,13 @@ export function generateRandomString(length: number): string {
  *
  * @returns {string} A random booking code of the specified length.
  */
-export function generateBookingCode() : string {
+export function generateBookingCode(): string {
   /**
    * The characters to use when generating the booking code.
    * This includes uppercase letters (A-Z) and numbers (0-9).
    */
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-  let result = '';
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let result = "";
   /**
    * The length of the booking code to generate.
    * This is set to 8, which should be sufficient for most use cases.
@@ -95,7 +95,7 @@ export function formatDateTime(date: Date | string | number): string {
   }
 
   // Format the date using the Internationalization API
-  return new Intl.DateTimeFormat("en-NG", options).format(dateToFormat);
+  return new Intl.DateTimeFormat("fr-CM", options).format(dateToFormat);
 }
 
 /**
@@ -117,20 +117,20 @@ export function formatDateRange(from: Date, to: Date): string {
 
   if (isSameDay) {
     // Format the date string
-    const dateStr = from.toLocaleString("en-NG", {
+    const dateStr = from.toLocaleString("fr-CM", {
       day: "numeric",
       month: "short",
     });
     // Format the time strings
     const fromTime = from
-      .toLocaleString("en-NG", {
+      .toLocaleString("fr-CM", {
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
       })
       .toLowerCase();
     const toTime = to
-      .toLocaleString("en-NG", {
+      .toLocaleString("fr-CM", {
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
@@ -141,7 +141,7 @@ export function formatDateRange(from: Date, to: Date): string {
   } else {
     // Format the from date string
     const fromStr = from
-      .toLocaleString("en-NG", {
+      .toLocaleString("fr-CM", {
         day: "numeric",
         month: "short",
         hour: "numeric",
@@ -151,7 +151,7 @@ export function formatDateRange(from: Date, to: Date): string {
       .toLowerCase();
     // Format the to date string
     const toStr = to
-      .toLocaleString("en-NG", {
+      .toLocaleString("fr-CM", {
         day: "numeric",
         month: "short",
         hour: "numeric",
@@ -172,9 +172,10 @@ export function formatDateRange(from: Date, to: Date): string {
  */
 export function formatCurrency(data: number): string {
   // Format the number as currency using the Internationalization API
-  return Intl.NumberFormat("en-NG", {
+  return Intl.NumberFormat("fr-CM", {
     style: "currency",
-    currency: "NGN",
+    currency: "XAF",
+    currencyDisplay: "narrowSymbol",
   }).format(data);
 }
 
@@ -193,7 +194,7 @@ export function formatCurrency(data: number): string {
  */
 export function debounce<T extends (...args: unknown[]) => void>(
   fn: T,
-  delay: number
+  delay: number,
 ): (...args: Parameters<T>) => void {
   let timer: ReturnType<typeof setTimeout>; // Holds the timeout ID for the debounce delay
 
