@@ -40,7 +40,7 @@ export default function RootLayout({
         <Toaster position="top-right" />
 
         <a
-          href="https://api.whatsapp.com/send?phone=2348034159368"
+          href="https://api.whatsapp.com/send?phone=447521359623"
           aria-label="Chat with us on WhatsApp"
           target="_blank"
           className="size-12 rounded-full fixed bottom-28 right-12 md:right-3 z-50 bg-secondary border hover:border-orange-400 hover:scale-110 hover:shadow-md flex items-center justify-center shadow-secondary-foreground/70 text-orange-500 shadow-xs"
