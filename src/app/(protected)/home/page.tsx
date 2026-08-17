@@ -32,7 +32,15 @@ async function Home() {
             <Radio /> Arbitrage Games
           </h2>
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex-col gap-6 flex items-center justify-center">
+          <a
+            href="https://www.edgeandodds.com/"
+            target="_blank"
+            className="block font-black tracking-widest text-center text-grey-500 hover:text-gray-7 relative h-16 border rounded-md w-sm p-4 shadow shadow-sidebar-accent-foreground text-2xl"
+            aria-label="Go to EdgeAndOdds website"
+          >
+            EdgeAndOdds
+          </a>
           <a
             href="https://www.livescore.com/en/"
             target="_blank"
