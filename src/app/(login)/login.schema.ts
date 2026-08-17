@@ -7,6 +7,9 @@ import { z } from "zod";
  * with the login form.
  */
 export const loginFormSchema = z.object({
-  username: z.string().min(1, "Username/Email is required"),
+  username: z
+    .string()
+    .min(1, "Username/Email is required")
+    .transform((email) => email.toLowerCase()),
   password: z.string().min(1, "Password is required"),
 });

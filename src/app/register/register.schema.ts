@@ -11,11 +11,13 @@ export const registerFormSchema = z
       .string()
       .min(1, "Username is required")
       .min(3, "Username must be at least 3 characters long")
-      .max(255, "Username must be less than 255 characters"),
+      .max(255, "Username must be less than 255 characters")
+      .transform((email) => email.toLowerCase()),
     email: z
       .string()
       .min(1, "Email is required")
-      .email("Provide a valid email address"),
+      .email("Provide a valid email address")
+      .transform((email) => email.toLowerCase()),
     phone: z
       .string()
       .min(1, "Phone number is required")
